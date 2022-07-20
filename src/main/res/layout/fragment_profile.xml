@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.Profile.ProfileFragment">
+
+    <TextView
+        android:id="@+id/text_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_marginTop="30dp"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:src="@drawable/user"
+        android:background="@drawable/back_image"
+        android:layout_marginLeft="148dp"/>
+
+    <TextView
+        android:id="@+id/textHint"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="chg_msg"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/change_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="save btn"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar_picture"
+        android:visibility="invisible"
+        android:foregroundGravity="center"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="35dp"
+            android:textSize="15sp"
+            android:hint="Name" />
+
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contactEditText"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="50dp"
+            android:hint="Phone Number"/>
+
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/type_Spinner"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="User Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:hint="email address"
+            android:textSize="15sp"
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="50dp"/>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/passwordEditText"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/phoneEditText"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:layout_marginLeft="50dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginBottom="15dp"-->
+        <!--            android:layout_marginRight="50dp"-->
+        <!--            android:hint="password" />-->
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
